@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Membership Form</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<section class="membership-box">
+    <h1>Membership form</h1>
+    <form class="membership form"action="about.html" method="post">
+        <article id="last_name" class="form-group">
+            <p>First Name</p>
+            <!-- <label for="membershipname">Name</label> -->
+            <input type="text" name="member_lastname" id="member_lastname" class="lastname" required>
+            <span class="error"></span>
+        </article>
+        <article id="first_name" class="form-group">
+            <p>Last Name</p>
+            <input type="text" name="member_lastname" id="member_firstname" class="firstname" required>
+            <span class="error"></span>
+        </article>
+        <article id="birthdate" class="form-group" >
+            <p>Birthdate</p>
+            <input type="date" name="member_birthdate" id="member_birthdate" class="birthday">
+            <span class="error"></span>
+        </article>
+        <article id="email" class="form-group">
+            <p>E-Mail</p>
+            <input type="email" name="member_email" id="member_email" class="email" required>
+            <span class="error"></span>
+        </article>
+        <input type="submit" name="submit" id="submit" class="button" value="Send Application">
+
+
+
+
+    </form>
+</section>
+<script src="/javascript/membership_form.js"></script>
+</body>
+</html>
+

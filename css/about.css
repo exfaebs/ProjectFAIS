@@ -1,0 +1,26 @@
+
+
+#about_1 {
+background-color: #DCCECE;
+}
+#about_2 {
+    background-color: #8b8ada;
+}
+#about_3 {
+    background-color: #907eb9;
+}
+
+.about_box{
+    padding: 1em;
+
+}
+
+.about_image{
+    width:100%;
+    height: auto;
+}
+.about_div {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}

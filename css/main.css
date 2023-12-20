@@ -1,0 +1,166 @@
+/* Main css with general things like footer and nav */
+body{
+    background-color: #C0C0C0;
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* ###########
+FORMS
+ ############ */
+
+/* haserror */
+/*.form*/ form .form-group.hasError input {
+    border-color: #f95959 !important;
+}
+
+.membership-box, .membership{
+    display: flex;
+    flex-direction: column;
+
+}
+input {
+    background-color: #B5B0E4;
+    height: 3em;
+
+}
+.form-group{
+    padding: 1em;
+    margin: 0 10px;
+}
+.form-group p{
+    font-size: larger;
+}
+/* ###############
+Font-thingies
+################*/
+.text-centered{
+    text-align: center;
+}
+.fais{
+    font-family: "monoton", sans-serif;
+}
+.nav_fais{
+    padding: 14px;
+}
+
+.text-white{
+    color:#f4e4e4;
+}
+
+
+/* ##############
+NAVIGATION
+###############*/
+
+#main-navigation{
+}
+#topnav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav {
+    min-height: 20px;
+    background-color: #312f73;
+    overflow: hidden;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    align-content: flex-end;
+}
+
+nav ul li, l1, nav_fais {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid #333333; */
+}
+
+nav a {
+    text-decoration: none;
+    color: #f4e4e4;
+    text-align: center;
+    font-size: 17px;
+}
+
+nav ul li a {
+    padding: 14px 16px;
+    line-height: 3em;
+}
+
+nav ul li:hover {
+    background-color: #f2f2f2;
+}
+
+nav ul li:hover a {
+    color: #333;
+}
+
+.nav_submenu { /* .nav_submenu */
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+.l2 { /* nav items l2 */
+    display: inline-block;
+    position: relative;
+    background-color: #472f73;
+}
+
+
+nav ul li:hover ul li a {
+    color: #f2f2f2;
+}
+.icon{
+    font-size: 2em;
+    margin-right: 1em;
+    display:none;
+}
+
+@media screen and (max-width: 600px){
+    .topnav li{
+        position:relative;
+        display:none;
+    }
+    .topnav.responsive {
+        background-image: url("test.png")
+    }
+
+    .l1, .icon{
+        background-color: #312f73;
+
+    }
+
+
+    .topnav.responsive li{
+        display:flex;
+        flex-direction: column;
+    }
+    .icon {
+        display: block;
+    }
+
+}
+
+
+/* OTHERS*/
+.button {
+    border-radius: 15px;
+    background-color: #312f73;
+    color: #C0C0C0;
+}
