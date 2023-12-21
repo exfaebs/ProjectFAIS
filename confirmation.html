@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Membership Form</title>
+    <title>Confirmation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Condensed:wght@700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+
 <body>
 <header>
     <nav id="topnav" class="topnav">
@@ -41,38 +41,22 @@
         </ul>
 
     </nav>
+
 </header>
 
-
-
 <main>
-    <section class="box-light-silver">
-        <h1>Membership form</h1>
-        <form class="membership form membership-form"action="confirmation.html" method="post">
-            <article id="last_name" class="form-group">
-                <label for="member_lastname">First Name</label>
-                <input type="text" name="member_lastname" id="member_lastname" class="lastname" required>
-                <p class="error"></p>
-            </article>
-            <article id="first_name" class="form-group">
-                <label for="member_firstname">First Name</label>
-                <input type="text" name="member_firstname" id="member_firstname" class="firstname" required>
-                <p class="error"></p>
-            </article>
-            <article id="birthdate" class="form-group" >
-                <label for="member_birthdate">Birth Date (optional)</label>
-                <input type="date" name="member_birthdate" id="member_birthdate" class="birthday">
-                <p class="error"></p>
-            </article>
-            <article id="email" class="form-group">
-                <label for="member_email">E-Mail</label>
-                <input type="email" name="member_email" id="member_email" class="email" required>
-                <p class="error"></p>
-            </article>
-            <input type="submit" name="submit" id="submit" class="button" value="Send Application">
+<section class="content-box bg-medium">
+    <div class="text-centered" >
+        <h1>Application away!</h1>
+        <p>Thank you for your application to <span class="fais">FAIS</span></p>
+        <p><a href="index.html" class="button">Back to Starting Page</a></p>
+    </div>
+    <div class="text-centered">
+        <a href="index.html"><img class="about_image" src="pictures/dyonix1_sitting.jpg" alt="Sitting droid"></a>
+    </div>
 
-        </form>
-    </section>
+
+</section>
 </main>
 
 <footer>
@@ -91,7 +75,5 @@
 </footer>
 
 </body>
-<script src="/javascript/membership_form.js"></script>
 <script src="/javascript/burger.js"></script>
 </html>
-

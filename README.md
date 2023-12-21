@@ -17,6 +17,7 @@ Aufgeteilt in Verschiedene Pages:
 ## Mitgliederformular
 
 ### to dos
+check all headers!
 Hauptchecks abgeschrieben...
 jscript überarbeiten.
 Birthday check

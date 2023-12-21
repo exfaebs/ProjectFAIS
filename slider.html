@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider Testing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Condensed:wght@700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<section id="slider" class="flex-container slider">
+    <div>
+        <button id="left-button" class="" onclick="plusDivs(-1)"><p class="triangle-left"></p></button>
+    </div>
+    <div>
+        <img class="slides" src="pictures/ai_arts_by_dyonix_by_dyonix01_dgewpr3-pre.jpg" alt="robot in the clouds">
+        <img class="slides" src="pictures/android_legacy_ii_workshop_by_fantasio_d5f3xg1-375w-2x.jpg" alt="robot in the clouds">
+        <img class="slides" src="pictures/dyonix1_sitting.jpg" alt="robot in the clouds">
+        <img class="slides" src="pictures/robot_belvedere.png" alt="robot in the clouds">
+    </div>
+    <div class="slides">
+         <img src="pictures/robot_belvedere.png" alt="robot in the clouds">
+        <p>Slidertext</p>
+
+    </div>
+    <div>
+        <button id="right-button" class="" onclick="plusDivs(+1)"><p class="triangle-right"></p></button>
+    </div>
+</section>
+</body>
+<script src="/javascript/slider.js"></script>
+<script src="/javascript/burger.js"></script>
+</html>
+

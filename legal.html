@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Membership Form</title>
+    <title>Legal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Condensed:wght@700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
 <header>
@@ -32,8 +30,8 @@
                 </div>
                 -->
             </li>
-            <li class="nav_item l1 active-l"><a class="nav_link" href="membership.html">Join Us</a></li>
-            <li class="nav_item l1"><a class="nav_link" href="legal.html">legal</a></li>
+            <li class="nav_item l1"><a class="nav_link" href="membership.html">Join Us</a></li>
+            <li class="nav_item l1 active-l"><a class="nav_link" href="legal.html">legal</a></li>
 
             <a href="javascript:void(0);" class="icon" onclick="burger()"
             >&#9776;
@@ -43,36 +41,46 @@
     </nav>
 </header>
 
-
-
 <main>
-    <section class="box-light-silver">
-        <h1>Membership form</h1>
-        <form class="membership form membership-form"action="confirmation.html" method="post">
-            <article id="last_name" class="form-group">
-                <label for="member_lastname">First Name</label>
-                <input type="text" name="member_lastname" id="member_lastname" class="lastname" required>
-                <p class="error"></p>
-            </article>
-            <article id="first_name" class="form-group">
-                <label for="member_firstname">First Name</label>
-                <input type="text" name="member_firstname" id="member_firstname" class="firstname" required>
-                <p class="error"></p>
-            </article>
-            <article id="birthdate" class="form-group" >
-                <label for="member_birthdate">Birth Date (optional)</label>
-                <input type="date" name="member_birthdate" id="member_birthdate" class="birthday">
-                <p class="error"></p>
-            </article>
-            <article id="email" class="form-group">
-                <label for="member_email">E-Mail</label>
-                <input type="email" name="member_email" id="member_email" class="email" required>
-                <p class="error"></p>
-            </article>
-            <input type="submit" name="submit" id="submit" class="button" value="Send Application">
 
-        </form>
-    </section>
+<section class="box-light-silver">
+    <article id="impressum">
+        <h1>Impressum</h1>
+        <h2>Responsible for content</h2>
+        <p>Created end of 2023</p>
+        <p>Fabian Zaugg</p>
+        <p>fabian.zaugg@ict-campus.net</p>
+        <h2>Addendum: FAIS is a lie</h2>
+        <p>This page was created during my apprenticeship at Post AG. The Content is purely fictional, so is FAIS </p>
+
+    </article>
+    <article id="privacy">
+        <h1>Privacy</h1>
+        <p>First: FAIS does not collect any data,
+            since the membership form does not work. Otherwise, there would be that.
+        </p>
+        <p>Second: FAIS does not exist (yet?)</p>
+        </article>
+    <article id="copyright">
+
+        <h1>Copyright</h1>
+        <h2>Code</h2>
+        <p>This page design is free to use, including all code. The Pictures are under their own copyright</p>
+        <h2>Pictures by artist</h2>
+        <ul>
+            <li>fantasio: <a href="https://www.deviantart.com/fantasio/gallery">Deviant Art Site</a></li>
+            <ul>
+                <li>Android Legacy II Workshop <a href="https://www.deviantart.com/fantasio/art/Android-Legacy-II-Workshop-327708433">Link to deviant art</a></li>
+            </ul>
+            <li>dyonix01 <a href="https://www.deviantart.com/dyonix01/gallery">Deviant Art Site</a></li>
+            <ul>
+                <li>unnamed 1 <a href="https://www.deviantart.com/dyonix01/art/AI-arts-by-Dyonix-991349774">Deviant Art</a></li>
+                <li>unnamed 2 <a href="https://www.deviantart.com/dyonix01/art/AI-arts-by-Dyonix-992499807">Deviant Art</a></li>
+                <li>unnamed 3 <a href="https://www.deviantart.com/dyonix01/art/AI-arts-by-Dyonix-1000517782">Deviant Art</a></li>
+            </ul>
+        </ul>
+    </article>
+</section>
 </main>
 
 <footer>
@@ -91,7 +99,4 @@
 </footer>
 
 </body>
-<script src="/javascript/membership_form.js"></script>
-<script src="/javascript/burger.js"></script>
 </html>
-

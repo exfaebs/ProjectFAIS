@@ -2,8 +2,11 @@ $(document).ready(function () {
 
     var lastnameError = true,
         firstnameError = true,
-        birthdateError = true,
+        /* birthdateError = true,*/
         emailError = true;
+
+    // Email Regex Pattern: Checks if mail could be possible
+    const regex = new RegExp('.+@.+\..+');
 
     $('input').blur(function () {
         if ($(this).hasClass('firstname')) {
@@ -37,8 +40,11 @@ $(document).ready(function () {
         if ($(this).hasClass('email')) {
             if ($(this).val().length === 0) {
                 setErrorClass($(this), "E-Mail is needed");
-                lastnameError = true;
-            } else {
+                emailError = true;
+            }  else if (!regex.test($(this).val())) {
+                setErrorClass($(this), "E-Mail is invalid");
+                emailError = true;
+            }  else {
                 setSuccessClass($(this));
                 console.log($(this).val())
                 console.log(Number.isInteger($(this).val()))
@@ -50,18 +56,14 @@ $(document).ready(function () {
 
 
 // Form submit
-    $('form.signup-form').submit(function (event) {
-        event.preventDefault();
+    $('form.membership-form').submit(function (event) {
+
 
         if (firstnameError == true || emailError == true || lastnameError == true) {
             $('.firstname, .email, .lastname').blur();
-        } else {
-            $('.signup, .login').addClass('switched');
-
-            setTimeout(function () { $('.signup, .login').hide(); }, 700);
-            setTimeout(function () { $('.brand').addClass('active'); }, 300);
-            setTimeout(function () { $('.heading').addClass('active'); }, 600);
-            setTimeout(function () { $('.form').hide(); }, 700);
+            /* !!!!! Entfernt, da sonst javascript notwendig!!!! schade...
+            event.preventDefault();
+             */
         }
     });
 
@@ -73,7 +75,7 @@ $(document).ready(function () {
 
 // Set Error Class
     function setErrorClass(e, f) {
-        e.siblings('span.error').text(f).fadeIn().parent('.form-group').addClass('hasError');
+        e.siblings('p.error').text(f).fadeIn().parent('.form-group').addClass('hasError');
         e.parent('.form-group').removeClass('hasSuccess');
     }
 

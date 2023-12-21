@@ -1,0 +1,33 @@
+/* ###########
+FORMS
+ ############ */
+
+/* haserror */
+form .form-group.hasError input {
+    border-color: #731010 !important;
+    background-color: #731010;
+    color: #f2f2f2;
+}
+
+.membership-box, .membership{
+    display: flex;
+    flex-direction: column;
+
+}
+input {
+    background-color: #B5B0E4;
+    height: 3em;
+    width: 100%;
+    margin-top: 1em;
+
+}
+.form-group{
+    padding: 1em;
+    margin: 0 10px;
+}
+.form-group p{
+    font-size: larger;
+}
+.error{
+    color: #9a1818;
+}

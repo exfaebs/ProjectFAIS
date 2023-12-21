@@ -1,12 +1,13 @@
 
 
-#about_1 {
+
+.about_bg-light {
 background-color: #DCCECE;
 }
-#about_2 {
+.about_bg-dark {
     background-color: #8b8ada;
 }
-#about_3 {
+.about_bg-medium {
     background-color: #907eb9;
 }
 
@@ -16,11 +17,21 @@ background-color: #DCCECE;
 }
 
 .about_image{
-    width:100%;
+    max-width:100%;
     height: auto;
 }
 .about_div {
     display: flex;
     flex-direction: column;
     padding: 2em;
+}
+
+#about_contact{
+    justify-content:center;
+}
+
+@media screen and (max-width: 600px){
+    .flex-container{
+        flex-direction: column;
+    }
 }

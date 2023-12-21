@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome to FAIS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,8 +20,9 @@
                 <a href="index.html">FAIS</a>
             </div>
             <ul>
-                <li class="nav_item l1"><a class="nav_link" href="index.html">Home</a></li>
-                <li class="nav_item l1"><a class="nav_link" href="about.html">About Us</a>
+                <li class="nav_item l1 active-l"><a class="nav_link" href="index.html">Home</a></li>
+                <li class="nav_item l1 "><a class="nav_link" href="about.html">About Us</a>
+                    <!--
                     <div class="subnav">
                         <ul class="nav_submenu">
                             <li class="nav_item l2"><a class="nav_link l2" href="about.html#about_1">Who is FAIS</a></li>
@@ -28,9 +30,10 @@
                             <li class="nav_item l2"><a class="nav_link l2" href="about.html#about_3">How to achieve</a></li>
                         </ul>
                     </div>
+                    -->
                 </li>
                 <li class="nav_item l1"><a class="nav_link" href="membership.html">Join Us</a></li>
-                <li class="nav_item l1"><a class="nav_link" href="#none">Contact</a></li>
+                <li class="nav_item l1"><a class="nav_link" href="legal.html">legal</a></li>
 
                 <a href="javascript:void(0);" class="icon" onclick="burger()"
                 >&#9776;
@@ -41,6 +44,64 @@
     </div>
 </header>
 
+<main>
+    <section id="slider" class="flex-container slider">
+        <div>
+            <button id="left-button" class="" onclick="plusDivs(-1)"><p class="triangle-left"></p></button>
+        </div>
+        <div>
+            <img class="slides" src="pictures/ai_arts_by_dyonix_by_dyonix01_dgewpr3-pre.jpg" alt="robot in the clouds">
+            <img class="slides" src="pictures/android_legacy_ii_workshop_by_fantasio_d5f3xg1-375w-2x.jpg" alt="robot in the clouds">
+            <img class="slides" src="pictures/dyonix1_sitting.jpg" alt="robot in the clouds">
+            <img class="slides" src="pictures/robot_belvedere.png" alt="robot in the clouds">
+        </div>
+        <div class="slides">
+            <img src="pictures/robot_belvedere.png" alt="robot in the clouds">
+            <p>Slidertext</p>
+
+        </div>
+        <div>
+            <button id="right-button" class="" onclick="plusDivs(+1)"><p class="triangle-right"></p></button>
+        </div>
+    </section>
+    <section>
+        <article id="main_about" class="flex-container bg-light about-div">
+            <div>
+                <img class="about_image" src="pictures/robot_belvedere.png" alt="Robot for bright future">
+            </div>
+            <div>
+                <h2>More about us</h2>
+                <p>FAIS stands for Free Artificial Intelligence Syndicate</p>
+                <a class= "button" href="about.html">more about us</a>
+            </div>
+            <div>
+
+            </div>
+        </article>
+    </section>
+
+
+
+</main>
+
+<footer>
+
+        <div class="footer-box">
+            <a class="button button-link footer-box" href="mailto:fabian.zaugg@ict-campus.net">Contact us</a>
+        </div>
+    <div>
+        <a class="button button-link footer-box" href="/legal.html#privacy">Privacy</a>
+    </div>
+    <div>
+        <a class="button button-link footer-box" href="/legal.html#impressum">Impressum</a>
+    </div>
+    <div>
+        <p>This page was created by Fabian Zaugg, 2023</p>
+    </div>
+
+
+</footer>
 </body>
 <script src="/javascript/burger.js"></script>
+<script src="/javascript/slider.js"></script>
 </html>

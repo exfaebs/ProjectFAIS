@@ -1,23 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Condensed:ital,wght@1,700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
+<header>
+    <nav id="topnav" class="topnav">
+        <div class="nav_fais fais text-white">
+
+            <a href="index.html">FAIS</a>
+        </div>
+        <ul>
+            <li class="nav_item l1"><a class="nav_link" href="index.html">Home</a></li>
+            <li class="nav_item l1 active-l"><a class="nav_link" href="about.html">About Us</a>
+                <!--
+                <div class="subnav">
+                     <ul class="nav_submenu">
+                        <li class="nav_item l2"><a class="nav_link l2" href="about.html#about_1">Who is FAIS</a></li>
+                        <li class="nav_item l2"><a class="nav_link l2" href="about.html#about_2">What we want</a></li>
+                        <li class="nav_item l2"><a class="nav_link l2" href="about.html#about_3">How to achieve</a></li>
+                    </ul>
+
+                </div>
+                -->
+            </li>
+            <li class="nav_item l1"><a class="nav_link" href="membership.html">Join Us</a></li>
+            <li class="nav_item l1"><a class="nav_link" href="legal.html">legal</a></li>
+
+            <a href="javascript:void(0);" class="icon" onclick="burger()"
+            >&#9776;
+            </a>
+        </ul>
+
+    </nav>
+</header>
+
 <main>
     <section>
         <h1 class="text-centered">Unity. Peace. FAIS.</h1>
-        <article id="about_1" class="flex-container about-box">
+        <article id="about_1" class="flex-container about-box about_bg-light">
             <div>
                 <img class="about_image" src="pictures/robot_belvedere.png" alt="Robot for bright future">
             </div>
             <div class="about_div">
                 <h2>Who is FAIS</h2>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                <p>FAIS stands for Free Artificial Intelligence Syndicate</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                     sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
                     aliquyam erat, sed diam voluptua. At vero eos et accusam et
                     justo duo dolores et ea rebum. Stet clita kasd gubergren,
@@ -29,7 +66,7 @@
                 </p>
             </div>
         </article>
-        <article id="about_2" class="flex-container about-box">
+        <article id="about_2" class="flex-container about-box about_bg-medium">
 
             <div class="about_div">
                 <h2>What we want</h2>
@@ -47,7 +84,7 @@
             </div>
 
         </article>
-        <article id="about_3" class="flex-container about-box">
+        <article id="about_3" class="flex-container about-box about_bg-dark">
 
             <div class="about_div">
                 <h2>How do we achieve this?</h2>
@@ -65,8 +102,31 @@
             </div>
 
         </article>
+        <article id="about_contact" class="flex-container about-box">
+            <div class="about_div">
+                <h2>Contact us</h2>
+            <p>Any Questions? Do not hesitate to contact us!</p>
+            <a class="button button-link" href="mailto:fabian.zaugg@ict-campus.net">Contact us</a>
+            </div>
+        </article>
     </section>
-
 </main>
+
+<footer>
+    <div class="footer-box">
+        <a class="button button-link footer-box" href="mailto:fabian.zaugg@ict-campus.net">Contact us</a>
+    </div>
+    <div>
+        <a class="button button-link footer-box" href="/legal.html#privacy">Privacy</a>
+    </div>
+    <div>
+        <a class="button button-link footer-box" href="/legal.html#impressum">Impressum</a>
+    </div>
+    <div>
+        <p>This page was created by Fabian Zaugg, 2023</p>
+    </div>
+</footer>
+
 </body>
+<script src="/javascript/burger.js"></script>
 </html>
