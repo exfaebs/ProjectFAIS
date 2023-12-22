@@ -1,39 +1,24 @@
 /* Main css with general things like footer and nav */
 body{
-    background-color: #C0C0C0;
+    background-color: #BCC6CC;
     font-family: 'Roboto', sans-serif;
     margin:0;
 
 }
 
-.flex-container{
-    display:flex;
 
-    flex-direction: row;
-    padding: 2em;
-    gap: 1em;
-
-}
-@media screen and (max-width: 600px) {
-    .flex-container {
-        flex-direction: column;
-    }
-}
-
-img {
-    max-width: 500px;
-    width: 100%
-}
 
 /* ###############
 Font-thingies
 ################*/
 
 
-h1 {
+h1, .h2-big {
     font-family: 'Roboto Condensed', sans-serif;
     font-style: italic;
     text-align: center;
+    font-size: 3em;
+    color: #312F64;
 }
 
 
@@ -51,6 +36,16 @@ h1 {
     text-align: center;
 }
 
+/* #################
+flex-properties
+#############*/
+.no-shrink{
+    flex-shrink:0;
+}
+.flex-self-center{
+    align-self: center;
+}
+
 /* ##############
 NAVIGATION
 ###############*/
@@ -64,7 +59,7 @@ NAVIGATION
 
 nav {
     min-height: 20px;
-    background-color: #312f73;
+    background-color: #312f64;
     overflow: hidden;
 }
 
@@ -74,7 +69,7 @@ nav ul {
     align-content: flex-end;
 }
 
-nav ul li, l1, nav_fais {
+nav ul li, .l1 {
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -123,11 +118,13 @@ nav ul li:hover ul li a {
 .icon{
     font-size: 2em;
     margin-right: 1em;
+    padding: 0;
+    line-height: normal;
     display:none;
 }
 
 @media screen and (max-width: 600px){
-    .topnav li{
+    .l1{
         position:relative;
         display:none;
     }
@@ -136,7 +133,7 @@ nav ul li:hover ul li a {
     }
 
     .l1, .icon{
-        background-color: #312f73;
+        background-color: #312f64;
 
     }
 
@@ -156,20 +153,44 @@ nav ul li:hover ul li a {
     color: #000;
 }
 
-/* OTHERS*/
+/* ########
+OTHER Stylings like boxes
+#########*/
+.legal-box{
+    margin-bottom:1em;
+    padding: 1em;
+}
+
+.flex-container{
+    display:flex;
+
+    flex-direction: row;
+    padding: 2em;
+    gap: 1em;
+
+}
+@media screen and (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+img {
+    max-width: 500px;
+    width: 100%
+}
+
 .button, button {
-    border-radius: 15px;
+    border-radius: 100px;
     background-color: #472f73;
     color: #e2e2e2;
     text-align: center;
     padding: 10px;
     text-decoration:none;
     text-transform: uppercase;
+
 }
-/* .button a, button-link{
-    text-decoration: none;
-}
-*/
+
 image {
     width:100%;
     height: auto;
@@ -181,12 +202,8 @@ image {
     max-width:1200px;
     margin:0 auto;
     padding: 1em;
-
 }
-.box-light-silver h1{
-    font-size: 2em;
 
-}
 
 .content-box{
     display: flex;
@@ -195,6 +212,10 @@ image {
     justify-content: center;
     justify-items: center;
 }
+.top-margin1{
+    margin-top:1em;
+}
+
 
 
 /* ##########
@@ -223,7 +244,7 @@ footer{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #312F73 ;
+    background-color: #312F64 ;
     gap: 2em;
     border-top: solid #B5B0E4;
 
@@ -246,6 +267,26 @@ Slider
 
     display:none;
 }
+
+
+
+#left-button, #right-button {
+    padding:1em;
+    font-size: 3vw;
+    border:none;
+}
+
+.slider{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:#E2E2E2;
+    justify-content: center;
+    padding: 2em;
+    gap: 1em;
+}
+
+/* failed integration of triangles
 .triangle-right {
     width: 0;
     height: 0;
@@ -262,10 +303,6 @@ Slider
     border-right: 1em solid #e2e2e2;
     border-top: 1em solid transparent;
 }
-
-#left-button, #right-button {
-    padding:1em;
-}
 .triangle-left:hover{
     border-right-color: red;
 
@@ -273,12 +310,4 @@ Slider
 .triangle-right:hover{
     border-left-color: red;
 }
-.slider{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    background-color:#E2E2E2;
-
-    padding: 2em;
-    gap: 1em;
-}
+*/

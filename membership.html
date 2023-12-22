@@ -35,9 +35,9 @@
             <li class="nav_item l1 active-l"><a class="nav_link" href="membership.html">Join Us</a></li>
             <li class="nav_item l1"><a class="nav_link" href="legal.html">legal</a></li>
 
-            <a href="javascript:void(0);" class="icon" onclick="burger()"
+            <li><a href="javascript:void(0);" class="icon" onclick="burger()"
             >&#9776;
-            </a>
+            </a></li>
         </ul>
 
     </nav>
@@ -48,7 +48,7 @@
 <main>
     <section class="box-light-silver">
         <h1>Membership form</h1>
-        <form class="membership form membership-form"action="confirmation.html" method="post">
+        <form class="membership form membership-form" action="confirmation.html" method="post">
             <article id="last_name" class="form-group">
                 <label for="member_lastname">First Name</label>
                 <input type="text" name="member_lastname" id="member_lastname" class="lastname" required>
@@ -80,18 +80,18 @@
         <a class="button button-link footer-box" href="mailto:fabian.zaugg@ict-campus.net">Contact us</a>
     </div>
     <div>
-        <a class="button button-link footer-box" href="/legal.html#privacy">Privacy</a>
+        <a class="button button-link footer-box" href="legal.html#privacy">Privacy</a>
     </div>
     <div>
-        <a class="button button-link footer-box" href="/legal.html#impressum">Impressum</a>
+        <a class="button button-link footer-box" href="legal.html#impressum">Impressum</a>
     </div>
     <div>
         <p>This page was created by Fabian Zaugg, 2023</p>
     </div>
 </footer>
-
+<script src="javascript/membership_form.js"></script>
+<script src="javascript/burger.js"></script>
 </body>
-<script src="/javascript/membership_form.js"></script>
-<script src="/javascript/burger.js"></script>
+
 </html>
 
